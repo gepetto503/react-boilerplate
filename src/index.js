@@ -1,10 +1,10 @@
-//3 arguments to a react element: type of element (ex: h1), props (none in these cases) and children (ex: 'hello, world' is considered a child of the h1 element)
+var heading = React.createElement('h1', {}, 'Help Queue');
+var ticketLocation = React.createElement('h3', {}, '3a');
+var ticketNames = React.createElement('h3', {}, 'Thato and Haley');
+var ticketIssue = React.createElement('h3', {}, "Firebase won't save record");
 
-//greeting and clock are created and then passed into app, then the render method renders app, which in turn renders greeting and clock?
-var greeting = React.createElement('h1', {}, 'Hello, World!');
-//third argument in clock is enclosed in back ticks, not quotes, because it is a template literal, meaning you can interpolate a js expression in the string
-var clock = React.createElement('h2', {}, `It is ${new Date().toLocaleTimeString()}`);
-var app = React.createElement('div', {}, greeting, clock);
+// creates a div with the h1 element and the 3 h3 elements and their text
+var app = React.createElement('div', {}, heading, ticketLocation, ticketNames, ticketIssue);
 
 
 //call the react dom library imported at the top of our html page, then call its .render method
