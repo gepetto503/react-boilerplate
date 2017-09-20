@@ -6,4 +6,4 @@ Module Bundler: Webpack
 Dev Server: Webpack
 HMR: React Hot Loader
 
-should be able to just run npm install and serve locally on port 8080.
+should be able to just run npm install and then run npm run start to serve locally on port 8080.
